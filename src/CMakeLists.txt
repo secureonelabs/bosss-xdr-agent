@@ -111,7 +111,7 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     install(FILES "${CMAKE_BINARY_DIR}/VERSION.json" DESTINATION .)
 
     set(CPACK_GENERATOR "WIX")
-    set(CPACK_PACKAGE_NAME "Wazuh Agent")
+    set(CPACK_PACKAGE_NAME "BOSSS XDR Agent")
     set(CPACK_PACKAGE_VERSION ${CLEAN_VERSION})
 
     if(DEFINED ENV{CUSTOM_PACKAGE_NAME})
@@ -120,7 +120,7 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
         set(CPACK_PACKAGE_FILE_NAME "wazuh-agent-${CPACK_PACKAGE_VERSION}")
     endif()
 
-    set(CPACK_PACKAGE_VENDOR "Wazuh, Inc.")
+    set(CPACK_PACKAGE_VENDOR "SecureOneLabs")
     set(CPACK_PACKAGE_DESCRIPTION_SUMMARY
         "Wazuh helps you to gain security visibility into your infrastructure "
         "by monitoring hosts at an operating system and application level. "

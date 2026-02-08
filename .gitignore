@@ -41,3 +41,6 @@ doxygen/
 
 # config result
 etc/config/wazuh-agent.yml
+
+# Rebranding script output
+REBRAND_REPORT.json

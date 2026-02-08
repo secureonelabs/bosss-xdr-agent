@@ -1,4 +1,4 @@
-# Wazuh Agent
+# BOSSS XDR Agent
 
 [![Slack](https://img.shields.io/badge/slack-join-blue.svg)](https://wazuh.com/community/join-us-on-slack/)
 [![Email](https://img.shields.io/badge/email-join-blue.svg)](https://groups.google.com/forum/#!forum/wazuh)
@@ -21,11 +21,11 @@
 
 Wazuh is a free and open-source platform for threat prevention, detection, and response, capable of protecting workloads across on-premises, virtualized, containerized, and cloud-based environments.
 
-This repository contains the Wazuh Agent, a key component in the Wazuh solution. The agent is deployed on monitored systems to collect data, which is then sent to the Wazuh Server for analysis. Wazuh has full integration with OpenSearch, offering powerful search capabilities and visualization tools for navigating security alerts.
+This repository contains the BOSSS XDR Agent, a key component in the BOSSS XDR solution. The agent is deployed on monitored systems to collect data, which is then sent to the BOSSS XDR Server for analysis. Wazuh has full integration with OpenSearch, offering powerful search capabilities and visualization tools for navigating security alerts.
 
 ## Installation
 
-To install the Wazuh Agent, follow the steps below:
+To install the BOSSS XDR Agent, follow the steps below:
 
 1. Clone the repository:
     ```bash

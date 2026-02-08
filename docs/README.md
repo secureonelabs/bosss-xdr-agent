@@ -1,6 +1,6 @@
-# Wazuh Agent Technical Documentation
+# BOSSS XDR Agent Technical Documentation
 
-This folder contains the technical documentation for the Wazuh Agent. The documentation is organized into the following guides:
+This folder contains the technical documentation for the BOSSS XDR Agent. The documentation is organized into the following guides:
 
 - **Development Guide**: Instructions for building, testing, and packaging the agent.
 - **Reference Manual**: Detailed information on the agent’s architecture, configuration, and usage.

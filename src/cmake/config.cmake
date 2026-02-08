@@ -1,5 +1,5 @@
 # Project name
-set(PROJECT_NAME "Wazuh Agent")
+set(PROJECT_NAME "BOSSS XDR Agent")
 
 # Project version
 file(READ "${CMAKE_SOURCE_DIR}/../VERSION.json" VERSION_JSON)

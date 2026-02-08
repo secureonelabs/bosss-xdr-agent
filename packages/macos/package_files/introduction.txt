@@ -1,4 +1,4 @@
-Welcome to the Wazuh Agent Installer. 
+Welcome to the BOSSS XDR Agent Installer. 
 
 Wazuh is a free, open-source and enterprise-ready security monitoring solution for threat detection, integrity monitoring, incident response and compliance.
 

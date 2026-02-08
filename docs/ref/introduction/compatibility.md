@@ -2,7 +2,7 @@
 
 ## Supported Operating Systems
 
-The Wazuh Agent is designed to be compatible with a wide range of operating systems, ensuring flexibility and adaptability in different environments. Below is the list of supported operating systems:
+The BOSSS XDR Agent is designed to be compatible with a wide range of operating systems, ensuring flexibility and adaptability in different environments. Below is the list of supported operating systems:
 
 ### Linux Distributions
 

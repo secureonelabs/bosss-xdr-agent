@@ -1,7 +1,7 @@
 # Architecture
 
-The new Wazuh Agent version features a robust core architecture designed for secure data collection and efficient
-communication with the Wazuh Manager. The following component diagram illustrates the agent's core elements and their
+The new BOSSS XDR Agent version features a robust core architecture designed for secure data collection and efficient
+communication with the BOSSS XDR Manager. The following component diagram illustrates the agent's core elements and their
 interactions.
 
 ```mermaid
@@ -52,9 +52,9 @@ graph TD
 **Component Overview:**
 
 - **Agent:**
-  - **Client:** Acts as the HTTP/2 client that connects and communicates with the Wazuh Manager.
+  - **Client:** Acts as the HTTP/2 client that connects and communicates with the BOSSS XDR Manager.
   - **Queue (Storage):** A persistent message queue that temporarily stores data collected by the agent.
-  - **Command Handler:** Executes commands received from the Wazuh Manager, facilitating remote management.
+  - **Command Handler:** Executes commands received from the BOSSS XDR Manager, facilitating remote management.
 
 - **Configuration Parser:** A parser for loading and retrieving configuration values from YAML files or strings.
 
@@ -73,7 +73,7 @@ graph TD
     functions to gather details on installed packages, hardware, and network configurations.
 
 - **Server:**
-  - **Manager:** Represents the Wazuh Manager that receives data from the agent and sends commands back to it.
+  - **Manager:** Represents the BOSSS XDR Manager that receives data from the agent and sends commands back to it.
 
 
 This architecture emphasizes a clear separation of concerns, where the core agent components work together to deliver
@@ -84,8 +84,8 @@ collectors or other enhancements can be integrated seamlessly.
 
 ## Client
 
-The **Client** component in the Wazuh Agent architecture is responsible for managing secure and efficient communication
-between the agent and the Wazuh Manager. It utilizes HTTP/2 to establish a bidirectional connection, enabling real-time
+The **Client** component in the BOSSS XDR Agent architecture is responsible for managing secure and efficient communication
+between the agent and the BOSSS XDR Manager. It utilizes HTTP/2 to establish a bidirectional connection, enabling real-time
 data exchange. This design ensures that the agent can send logs, events, and other relevant information to the Manager
 while receiving commands. The Client implementation follows modern communication standards, ensuring both data integrity
 and confidentiality during transmission.
@@ -118,7 +118,7 @@ Refer to [Messages](../messages.md) for more details about defined messages.
 
 ## Queue
 
-The **Queue** component plays a crucial role in managing the flow of events and commands within the Wazuh Agent. It
+The **Queue** component plays a crucial role in managing the flow of events and commands within the BOSSS XDR Agent. It
 acts as an intermediary storage mechanism that ensures efficient handling, persistence, and retrieval of data between
 different agent components. The following diagram illustrates its interactions with key system components:
 
@@ -179,7 +179,7 @@ Agent, ensuring responsiveness and reliability.
 
 ## Command Handler
 
-The command processing flow in the Wazuh Agent is designed to handle incoming instructions from the server efficiently
+The command processing flow in the BOSSS XDR Agent is designed to handle incoming instructions from the server efficiently
 and reliably. The following diagram illustrates the main components involved in command management and their
 interactions:
 
@@ -233,7 +233,7 @@ end
 
 This design ensures a clear separation between command reception, persistence, execution, and feedback. It not only
 maintains robustness through persistence (using the Command Store) but also guarantees that the agent remains responsive
-to dynamic instructions from the Wazuh Manager.
+to dynamic instructions from the BOSSS XDR Manager.
 
 Refer to [Commands](../commands.md) for more details about defined commands.
 

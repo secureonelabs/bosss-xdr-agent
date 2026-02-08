@@ -1,12 +1,12 @@
 # Build a Container Image
 
-This guide describes how to build Docker containers that install the Wazuh Agent from package files. Two container
+This guide describes how to build Docker containers that install the BOSSS XDR Agent from package files. Two container
 setups are provided: one for RPM-based systems (RHEL) and another for DEB-based systems (Ubuntu).
 
 ## Prerequisites
 
 - **Docker:** Ensure Docker is installed and running on your system.
-- **Data Directory:** Create a directory named `data` in your working folder and place the corresponding Wazuh Agent package:
+- **Data Directory:** Create a directory named `data` in your working folder and place the corresponding BOSSS XDR Agent package:
   - **RPM Container:** Place `wazuh-agent*.rpm` in the `data` folder.
   - **DEB Container:** Place `wazuh-agent*.deb` in the `data` folder.
 
@@ -20,7 +20,7 @@ FROM generic/rhel9
 # Copy the data directory containing the RPM package
 COPY data /tmp/data
 
-# Install the Wazuh Agent RPM, download and extract mitmproxy,
+# Install the BOSSS XDR Agent RPM, download and extract mitmproxy,
 # and attempt to stop/disable firewalld
 RUN rpm -i /tmp/data/wazuh-agent*.rpm && \
     curl -L https://downloads.mitmproxy.org/11.0.0/mitmproxy-11.0.0-linux-x86_64.tar.gz -o /tmp/mitmproxy.tar.gz && \
@@ -58,7 +58,7 @@ RUN apt-get update && apt-get install -y lsb-release adduser curl
 # Copy the data directory containing the DEB package
 COPY data /tmp/data
 
-# Install the Wazuh Agent DEB package
+# Install the BOSSS XDR Agent DEB package
 RUN dpkg -i /tmp/data/wazuh-agent*.deb
 
 # Download and extract mitmproxy

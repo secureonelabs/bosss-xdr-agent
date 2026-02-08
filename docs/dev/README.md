@@ -1,6 +1,6 @@
-# Wazuh Agent Development Guide
+# BOSSS XDR Agent Development Guide
 
-This guide provides comprehensive, step-by-step instructions for building, testing, and packaging the Wazuh Agent. It covers compiling the source code, generating platform-specific packages, and creating Docker container images, offering all the necessary information to streamline the development process.
+This guide provides comprehensive, step-by-step instructions for building, testing, and packaging the BOSSS XDR Agent. It covers compiling the source code, generating platform-specific packages, and creating Docker container images, offering all the necessary information to streamline the development process.
 
 The guide is organized into the following sections:
 
@@ -11,4 +11,4 @@ The guide is organized into the following sections:
 - **Run from Sources**: Instructions for running the agent directly from the source code ([run-agent.md](run-agent.md))
 - **Run Tests**: Procedures to execute tests ([run-tests.md](run-tests.md))
 
-Follow the instructions in each section to set up your development environment and efficiently build the Wazuh Agent.
+Follow the instructions in each section to set up your development environment and efficiently build the BOSSS XDR Agent.

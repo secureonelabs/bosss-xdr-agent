@@ -1,13 +1,13 @@
 # Back Up and Restore
 
-This document outlines the procedures for backing up and restoring the Wazuh Agent application across different
+This document outlines the procedures for backing up and restoring the BOSSS XDR Agent application across different
 operating systems. This may be necessary if you want to start the same agent after restoring an endpoint. However, it is
 not recommended for moving an agent from one endpoint to another.
 
 ## Backup Procedure
 
 ### Linux
-1. Stop the Wazuh Agent service:
+1. Stop the BOSSS XDR Agent service:
    ```sh
    sudo systemctl stop wazuh-agent
    ```
@@ -30,7 +30,7 @@ not recommended for moving an agent from one endpoint to another.
 
 ### macOS
 
-1. Stop the Wazuh Agent service:
+1. Stop the BOSSS XDR Agent service:
    ```sh
    sudo launchctl unload /Library/LaunchDaemons/com.wazuh.agent.plist
    ```
@@ -49,7 +49,7 @@ not recommended for moving an agent from one endpoint to another.
 
 ### Windows
 
-1. Stop the Wazuh Agent service:
+1. Stop the BOSSS XDR Agent service:
    ```sh
    net stop "wazuh-agent"
    ```

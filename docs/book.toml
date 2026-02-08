@@ -3,4 +3,4 @@ authors = ["Vikman Fernandez-Castro"]
 language = "en"
 multilingual = false
 src = "."
-title = "Wazuh Agent Documentation"
+title = "BOSSS XDR Agent Documentation"

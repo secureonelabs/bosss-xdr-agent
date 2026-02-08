@@ -2,7 +2,7 @@
 
 ## Linux Packages
 
-The script `generate_package.sh` automates the process of building Wazuh Agent packages for various architectures within a Docker container.
+The script `generate_package.sh` automates the process of building BOSSS XDR Agent packages for various architectures within a Docker container.
 
 **Features:**
 
